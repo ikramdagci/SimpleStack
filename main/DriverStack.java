@@ -10,9 +10,8 @@ public class DriverStack {
 		StackImplementation<Integer> stackData = new StackImplementation<Integer>();
 
 		Random random = new Random();
-		int numberOfData = random.nextInt(30);
 
-		for (int i = 0; i < numberOfData ; i++) {
+		for (int i = random.nextInt(30); i > 0  ; i--) {
 			stackData.push((i * 10));
 		}
 
